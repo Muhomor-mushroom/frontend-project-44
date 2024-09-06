@@ -13,7 +13,7 @@ const firstGame = () => {
   };
 
   for (let i = 1; i <= 3; i += 1) {
-    const randomNumber = Math.floor(Math.random() * (Math.floor(500) - Math.ceil(1)));
+    const randomNumber = Math.floor(Math.random() * (500) + 1);
     console.log(`Question: ${randomNumber}`);
     const answer = readlineSync.question("Your answer: ");
     const correctAnswer = isEven(randomNumber);
