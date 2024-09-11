@@ -1,5 +1,5 @@
 #!/usr/bin/env node;
-import askQuestion from "../src/cli.js"
-import brainEven from "./brain-even.js";
+import askQuestion from '../src/cli.js';
+
 console.log('Welcome to the Brain Games!');
 askQuestion();
