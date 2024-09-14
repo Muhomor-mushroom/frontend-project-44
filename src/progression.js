@@ -11,7 +11,7 @@ const getQuestionAndAnswer = () => {
   const randomIndex = Math.round(Math.random() * array.length);
   const correctAnswer = array[randomIndex];
   array[randomIndex] = '..';
-  const question = `Question: ${array}`;
+  const question = `Question: ${array.join(' ')}`;
   return [question, correctAnswer];
 };
 
