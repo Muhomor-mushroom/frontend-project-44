@@ -18,7 +18,7 @@ const getQuestionAndAnswer = () => {
   const firstRandomNumber = Math.floor(Math.random() * 100);
   const secondRandomNumber = Math.floor(Math.random() * 100);
   const randomOperator = operators[Math.floor(Math.random() * 2 + 0.50)];
-  const question = `Question: ${firstRandomNumber}${randomOperator}${secondRandomNumber}`;
+  const question = `Question: ${firstRandomNumber} ${randomOperator} ${secondRandomNumber}`;
   const correctAnswer = getCorrectResult(firstRandomNumber, randomOperator, secondRandomNumber);
   return [question, correctAnswer];
 };
