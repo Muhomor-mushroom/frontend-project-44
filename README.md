@@ -6,3 +6,5 @@
 [![Brain-gcd asciinema](https://asciinema.org/a/41Wtgroovhxg4W0pyrF44pXOV.svg)](https://asciinema.org/a/41Wtgroovhxg4W0pyrF44pXOV)
 [![Brain-progression asciiema](https://asciinema.org/a/D29YdDtOr2STnYDhJS4NsMRis.svg)](https://asciinema.org/a/D29YdDtOr2STnYDhJS4NsMRis)
 [![Brain-prime asciinema](https://asciinema.org/a/odmpNF5bYUCT3daWch2jNXNDl.svg)](https://asciinema.org/a/odmpNF5bYUCT3daWch2jNXNDl)
+
+This project contains five mathematical mini-games. These games are launched using five commands: make-even (task on even and odd numbers), make-calc (task on a calculator), make-gcd (task on finding the greatest common divisor), make-progression (task on calculating an arithmetic progression ), make-prime (a task of calculating correct and incorrect numbers).
