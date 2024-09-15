@@ -1,18 +1,20 @@
 import { foundation } from './index.js';
 
-const cycle = (firstRandomNumber, secondRandomNumber) => {
-  for (let i = 40; i > 0; i -= 1) {
-    if (firstRandomNumber % i === 0 && secondRandomNumber % i === 0) {
-      return i;
+const cycle = (firstNumber, secondNumber) => {
+  const result = [];
+  for (let i = firstNumber - 1; i > 0; i -= 1) {
+    if (firstNumber % i === 0 && secondNumber % i === 0) {
+      result.push(i);
     }
   }
+  return result.length > 1 ? result[0] : 1;
 };
 
-const getCorrectResult = (firstRandomNumber, secondRandomNumber) => {
-  if (firstRandomNumber > secondRandomNumber) {
-    return firstRandomNumber % secondRandomNumber === 0 ? secondRandomNumber : cycle(firstRandomNumber, secondRandomNumber);
+const getCorrectResult = (firstNumber, secondNumber) => {
+  if (firstNumber > secondNumber) {
+    return firstNumber % secondNumber === 0 ? secondNumber : cycle(firstNumber, secondNumber);
   }
-  return secondRandomNumber % firstRandomNumber === 0 ? firstRandomNumber : cycle(firstRandomNumber, secondRandomNumber);
+  return secondNumber % firstNumber === 0 ? firstNumber : cycle(firstNumber, secondNumber);
 };
 
 const getQuestionAndAnswer = () => {
