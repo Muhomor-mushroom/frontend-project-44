@@ -1,9 +1,10 @@
 import { foundation } from './index.js';
+import { numberRandomizer } from './index.js';
 
 const getQuestionAndAnswer = () => {
   const array = [];
-  const firstNumber = Math.round(Math.random() * 100);
-  const gradation = Math.round(Math.random() * 11);
+  const firstNumber = numberRandomizer();
+  const gradation = numberRandomizer();
   array.push(firstNumber);
   for (let i = 0; i < 9; i += 1) {
     array.push(array[i] + gradation);

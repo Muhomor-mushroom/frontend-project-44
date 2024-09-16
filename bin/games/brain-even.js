@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import fiveGame from '../src/prime.js';
+import firstGame from '../../src/isEven.js';
 
 console.log('Welcome to the Brain Games!');
-fiveGame();
+firstGame();

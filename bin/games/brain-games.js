@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import fourGame from '../src/progression.js';
+import askQuestion from '../../src/cli.js';
 
 console.log('Welcome to the Brain Games!');
-fourGame();
+askQuestion();

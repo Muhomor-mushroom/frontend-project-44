@@ -8,3 +8,4 @@
 [![Brain-prime asciinema](https://asciinema.org/a/odmpNF5bYUCT3daWch2jNXNDl.svg)](https://asciinema.org/a/odmpNF5bYUCT3daWch2jNXNDl)
 
 This project contains five mathematical mini-games. These games are launched using five commands: make-even (task on even and odd numbers), make-calc (task on a calculator), make-gcd (task on finding the greatest common divisor), make-progression (task on calculating an arithmetic progression ), make-prime (a task of calculating correct and incorrect numbers).
+Before you start using the project, you need to enter 'npm i' in the console. Once all required dependencies have been downloaded, the project can be ready to use

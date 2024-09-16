@@ -1,19 +1,16 @@
 import readlineSync from 'readline-sync';
 
-/* Вывод результата */
-const resulter = (endResult, name) => {
-  if (endResult === 'correct') {
-    console.log('Correct!');
-  } else {
-    console.log(`Let's try again, ${name}!`);
-  }
-};
+const numberRandomizer = () => {
+  const result = Math.round(Math.random() * 101);
+  return result;
+}
 
 export const foundation = (rule, getQuestionAndAnswer) => {
   const name = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${name}!`);
   console.log(rule);
-  for (let i = 1; i <= 3; i += 1) {
+  const numberOfQuestions = 3;
+  for (let i = 1; i <= numberOfQuestions; i += 1) {
     const [question, correctAnswer] = getQuestionAndAnswer();
     console.log(question);
     const answer = readlineSync.question('Your answer: ');
@@ -21,11 +18,11 @@ export const foundation = (rule, getQuestionAndAnswer) => {
       console.log(
         `'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`,
       );
-      resulter('incorrect', name);
+      console.log(`Let's try again, ${name}!`)
       return;
     }
-    resulter('correct');
+    console.log('Correct!');
   }
   console.log(`Congratulations, ${name}!`);
 };
-export default resulter;
+export {numberRandomizer};

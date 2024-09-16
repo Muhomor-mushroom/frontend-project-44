@@ -1,4 +1,5 @@
 import { foundation } from './index.js';
+import { numberRandomizer } from './index.js';
 
 const cycle = (firstNumber, secondNumber) => {
   const result = [];
@@ -18,8 +19,8 @@ const getCorrectResult = (firstNumber, secondNumber) => {
 };
 
 const getQuestionAndAnswer = () => {
-  const firstRandomNumber = Math.round(Math.random() * 101);
-  const secondRandomNumber = Math.round(Math.random() * 101);
+  const firstRandomNumber = numberRandomizer();
+  const secondRandomNumber = numberRandomizer();
   const question = `Question: ${firstRandomNumber} ${secondRandomNumber}`;
   const correctAnswer = getCorrectResult(firstRandomNumber, secondRandomNumber);
   return [question, correctAnswer];

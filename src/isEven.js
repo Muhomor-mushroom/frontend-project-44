@@ -1,10 +1,7 @@
 import { foundation } from './index.js';
 
 const isEven = (number) => {
-  if (number % 2 === 0) {
-    return 'yes';
-  }
-  return 'no';
+  return number % 2 == 0 ? 'yes' : 'no';
 };
 
 const getQuestionAndAnswer = () => {

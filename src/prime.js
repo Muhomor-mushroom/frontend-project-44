@@ -1,20 +1,25 @@
 import { foundation } from './index.js';
+import { numberRandomizer } from './index.js';
 
 const isPrime = (number) => {
-  if (number <= 1) {
-    throw new Error('Unknown number');
-  } else {
+  const dropError = () => {
+    throw new Error('numbers less than 2 can be neither prime nor complex');
+  };
+
+  const correctResult = () => {
     for (let i = number - 1; i > 1; i -= 1) {
-      if (number % i === 0) {
-        return 'no';
+        if (number % i === 0) {
+          return 'no';
+        }
       }
-    }
-    return 'yes';
-  }
+      return 'yes';
+  };
+
+    return number <= 1 ? dropError() : correctResult();
 };
 
 const getQuestionAndAnswer = () => {
-  const randomNumber = Math.round(Math.random() * 1025);
+  const randomNumber = numberRandomizer();
   const question = `Question: ${randomNumber}`;
   const correctAnswer = isPrime(randomNumber);
   return [question, correctAnswer];

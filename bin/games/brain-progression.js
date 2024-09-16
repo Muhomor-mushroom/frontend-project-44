@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import firstGame from '../src/isEven.js';
+import fourGame from '../../src/progression.js';
 
 console.log('Welcome to the Brain Games!');
-firstGame();
+fourGame();
