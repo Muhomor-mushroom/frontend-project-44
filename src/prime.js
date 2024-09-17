@@ -1,5 +1,4 @@
-import { foundation } from './index.js';
-import { numberRandomizer } from './index.js';
+import { foundation, numberRandomizer } from './index.js';
 
 const isPrime = (number) => {
   const dropError = () => {
@@ -8,14 +7,14 @@ const isPrime = (number) => {
 
   const correctResult = () => {
     for (let i = number - 1; i > 1; i -= 1) {
-        if (number % i === 0) {
-          return 'no';
-        }
+      if (number % i === 0) {
+        return 'no';
       }
-      return 'yes';
+    }
+    return 'yes';
   };
 
-    return number <= 1 ? dropError() : correctResult();
+  return number <= 1 ? dropError() : correctResult();
 };
 
 const getQuestionAndAnswer = () => {

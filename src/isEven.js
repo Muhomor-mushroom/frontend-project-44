@@ -1,8 +1,6 @@
 import { foundation } from './index.js';
 
-const isEven = (number) => {
-  return number % 2 == 0 ? 'yes' : 'no';
-};
+const isEven = (number) => (number % 2 === 0 ? 'yes' : 'no');
 
 const getQuestionAndAnswer = () => {
   const randomNumber = Math.floor(Math.random() * (500) + 1);

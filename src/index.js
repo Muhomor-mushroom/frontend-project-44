@@ -3,7 +3,7 @@ import readlineSync from 'readline-sync';
 const numberRandomizer = () => {
   const result = Math.round((Math.random() + 1) * 101);
   return result;
-}
+};
 
 export const foundation = (rule, getQuestionAndAnswer) => {
   const name = readlineSync.question('May I have your name? ');
@@ -18,11 +18,11 @@ export const foundation = (rule, getQuestionAndAnswer) => {
       console.log(
         `'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`,
       );
-      console.log(`Let's try again, ${name}!`)
+      console.log(`Let's try again, ${name}!`);
       return;
     }
     console.log('Correct!');
   }
   console.log(`Congratulations, ${name}!`);
 };
-export {numberRandomizer};
+export { numberRandomizer };
