@@ -1,7 +1,7 @@
 import readlineSync from 'readline-sync';
 
 const numberRandomizer = () => {
-  const result = Math.round(Math.random() * 101);
+  const result = Math.round((Math.random() + 1) * 101);
   return result;
 }
 
