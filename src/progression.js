@@ -10,10 +10,10 @@ const getQuestionAndAnswer = () => {
     array.push(array[i] + gradation);
   }
   const randomIndex = Math.round((Math.random() + 0.1) * array.length - 1);
-  const correctAnswer = array[randomIndex];
+  const correctAnswer = array[randomIndex].toString();
   array[randomIndex] = '..';
   const question = `Question: ${array.join(' ')}`;
-  return [question, correctAnswer.toString()];
+  return [question, correctAnswer];
 };
 
 const fourGame = () => {
