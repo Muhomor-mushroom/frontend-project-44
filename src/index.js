@@ -12,7 +12,7 @@ export const foundation = (rule, getQuestionAndAnswer) => {
   const numberOfQuestions = 3;
   for (let i = 1; i <= numberOfQuestions; i += 1) {
     const [question, correctAnswer] = getQuestionAndAnswer();
-    const correctAnswerInString = correctAnswer.toString()
+    const correctAnswerInString = correctAnswer.toString();
     console.log(question);
     const answer = readlineSync.question('Your answer: ');
     if (correctAnswerInString !== answer) {
