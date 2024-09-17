@@ -5,8 +5,9 @@ const getQuestionAndAnswer = () => {
   const array = [];
   const firstNumber = numberRandomizer();
   const gradation = numberRandomizer();
+  const numberOfNumbers = 9;
   array.push(firstNumber);
-  for (let i = 0; i < 9; i += 1) {
+  for (let i = 0; i < numberOfNumbers; i += 1) {
     array.push(array[i] + gradation);
   }
   const randomIndex = Math.round(Math.random() * array.length - 1);
