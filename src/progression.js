@@ -13,7 +13,7 @@ const getQuestionAndAnswer = () => {
   const correctAnswer = array[randomIndex];
   array[randomIndex] = '..';
   const question = `Question: ${array.join(' ')}`;
-  return [question, correctAnswer];
+  return [question, correctAnswer.toString()];
 };
 
 const fourGame = () => {
