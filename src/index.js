@@ -15,7 +15,7 @@ export const foundation = (rule, getQuestionAndAnswer) => {
     const correctAnswerInString = correctAnswer.toString();
     console.log(question);
     const answer = readlineSync.question('Your answer: ');
-    if (correctAnswerx !== answer) {
+    if (correctAnswer !== answer) {
       console.log(
         `'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`,
       );
