@@ -12,9 +12,10 @@ export const foundation = (rule, getQuestionAndAnswer) => {
   const numberOfQuestions = 3;
   for (let i = 1; i <= numberOfQuestions; i += 1) {
     const [question, correctAnswer] = getQuestionAndAnswer();
+    const correctAnswerInString = correctAnswer.toString()
     console.log(question);
     const answer = readlineSync.question('Your answer: ');
-    if (correctAnswer.toString() !== answer) {
+    if (correctAnswerInString !== answer) {
       console.log(
         `'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`,
       );
