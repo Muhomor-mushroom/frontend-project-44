@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import fourGame from '../../src/progression.js';
+import thirdGame from '../src/games/gcd.js';
 
 console.log('Welcome to the Brain Games!');
-fourGame();
+thirdGame();

@@ -1,4 +1,4 @@
-import { foundation, numberRandomizer } from './index.js';
+import { foundation, numberRandomizer } from '../index.js';
 
 const cycle = (firstNumber, secondNumber) => {
   const result = [];

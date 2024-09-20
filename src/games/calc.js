@@ -1,4 +1,4 @@
-import { foundation, numberRandomizer } from './index.js';
+import { foundation, numberRandomizer } from '../index.js';
 
 const getCorrectResult = (firstNumber, operator, secondNumber) => {
   switch (operator) {
@@ -17,7 +17,7 @@ const getQuestionAndAnswer = () => {
   const operators = ['+', '-', '*'];
   const firstRandomNumber = numberRandomizer();
   const secondRandomNumber = numberRandomizer();
-  const randomOperator = operators[Math.floor(Math.random() * 2 + 0.50)];
+  const randomOperator = operators[numberRandomizer(0, 2)];
   const question = `Question: ${firstRandomNumber} ${randomOperator} ${secondRandomNumber}`;
   const correctAnswer = getCorrectResult(firstRandomNumber, randomOperator, secondRandomNumber);
   return [question, correctAnswer];

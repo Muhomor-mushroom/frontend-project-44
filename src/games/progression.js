@@ -1,4 +1,4 @@
-import { foundation, numberRandomizer } from './index.js';
+import { foundation, numberRandomizer } from '../index.js';
 
 const getQuestionAndAnswer = () => {
   const array = [];
@@ -9,7 +9,7 @@ const getQuestionAndAnswer = () => {
   for (let i = 0; i < numberOfNumbers; i += 1) {
     array.push(array[i] + gradation);
   }
-  const randomIndex = Math.round((Math.random() + 0.1) * (array.length - 1));
+  const randomIndex = Math.round(numberRandomizer(0, 10));
   const correctAnswer = array[randomIndex].toString();
   array[randomIndex] = '..';
   const question = `Question: ${array.join(' ')}`;
