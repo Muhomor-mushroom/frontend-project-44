@@ -1,7 +1,6 @@
-import { foundation, numberRandomizer  } from '../index.js';
+import { foundation, numberRandomizer } from '../index.js';
 
 const isEven = (number) => number % 2 === 0;
-
 
 const getQuestionAndAnswer = () => {
   const randomNumber = Math.floor(numberRandomizer());

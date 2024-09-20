@@ -9,7 +9,7 @@ const getQuestionAndAnswer = () => {
   for (let i = 0; i < numberOfNumbers; i += 1) {
     array.push(array[i] + gradation);
   }
-  const randomIndex = Math.round(numberRandomizer(0, 10));
+  const randomIndex = Math.round(numberRandomizer(0, 9));
   const correctAnswer = array[randomIndex].toString();
   array[randomIndex] = '..';
   const question = `Question: ${array.join(' ')}`;
