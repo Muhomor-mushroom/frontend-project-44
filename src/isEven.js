@@ -1,11 +1,12 @@
 import { foundation } from './index.js';
 
-const isEven = (number) => (number % 2 === 0 ? 'yes' : 'no');
+const isEven = (number) => number % 2 === 0;
+
 
 const getQuestionAndAnswer = () => {
   const randomNumber = Math.floor(Math.random() * (500) + 1);
   const question = `Question: ${randomNumber}`;
-  const correctAnswer = isEven(randomNumber);
+  const correctAnswer = isEven(randomNumber) ? 'yes' : 'no';
   return [question, correctAnswer];
 };
 
